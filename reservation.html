@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./IMAGE/parc.jpg);
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+        .reservation {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.reservation form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  gap: 15px;
+}
+
+.reservation input,
+.reservation select,
+.reservation textarea,
+.reservation button {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.reservation button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#confirmation-message {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #28a745;
+}
+
+ul{
+    list-style: none;
+    float: center;
+    display: left;
+    margin-top: 20px;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background: brown;
+    color: black;
+
+}
+ul li.active a{
+    background: burlywood;
+    color: black;
+}
+    </style>
+</head>
+<body>
+    <section class="reservation">
+  <h2>Réservez votre visite</h2>
+  <form id="booking-form" onsubmit="return ">
+    <input type="text" placeholder="Nom complet" required>
+    <input type="email" placeholder="Adresse e-mail" required>
+    <select required>
+      <option value="">Destination</option>
+      <option>Paris</option>
+      <option>GOMA</option>
+      <option>kinshasa</option>
+    </select>
+    <input type="date" required>
+    <textarea placeholder="Message ou demande spéciale"></textarea>
+    <button type="submit">Réserver</button>
+    <Ul>
+            <li class="RETOUR">
+                <a href="index.html">RETOUR</a>
+            </li>
+        </Ul>
+  </form>
+  <p id="confirmation-message" style="display:none;">✅ Merci pour votre réservation! Nous vous contacterons bientôt.</p>
+</section>
+<script>
+  function confirmBooking() {
+    document.getElementById("booking-form").style.display = "none";
+    document.getElementById("confirmation-message").style.display = "block";
+    return false; // Empêche l'envoi réel du formulaire
+}
+</script>
+
+
+</body>
+</html>

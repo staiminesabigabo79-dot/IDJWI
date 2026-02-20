@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empire visite - Accueil</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.hero {
+  background: url("IMAGE/acc.jpg") no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+
+.overlay h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.search-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.search-form select,
+.search-form input,
+.search-form button {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-form button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.featured {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+}
+
+.card p {
+  padding: 0 15px 15px;
+}
+
+.contact {
+  background-color: #003366;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+ul{
+    list-style: none;
+    float: center;
+    display: left;
+    margin-top: 20px;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background: #fff;
+    color: black;
+
+}
+ul li.active a{
+    background: #fff;
+    color: black;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+.search-form {
+    flex-direction: column;
+}
+
+.cards {
+    flex-direction: column;
+    align-items: center;
+}
+
+.overlay h1 {
+    font-size: 2em;
+}
+}
+
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay">
+      <h1>Explorez le parc nationnal kahuzi byega</h1>
+      <p>Des visites de rêve, des services sur mesure</p>
+      <a href="#destinations" class="cta-button">Voir les destinations</a>
+    </div>
+  </header>
+
+    </form>
+  </section>
+
+  <section id="destinations" class="featured">
+    <h2>Destinations en vedette</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="IMAGE/anni.jpg" alt="anni">
+        <h3>AU NORD DU PARC</h3>
+        <p>La nature de lumière vous attend</p>
+      </div>
+      <div class="card">
+        <img src="IMAGE/parc.jpg" alt="parc">
+        <h3>A L'EST DU PARC</h3>
+        <p>Temples, marchés flottants et vie nocturne vibrante.</p>
+      </div>
+      <div class="card">
+        <img src="IMAGE/site.jpg" alt="site">
+        <h3>AU SUD DU PARC</h3>
+        <p>spectacles et énergie cosmopolite.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contactez-nous</h2>
+    <p>Email: <a href="mailto:staiminesabigabo@gmail.com">staiminesabigabo@gmail.com</a></p>
+                    <p>Téléphone: <a href="tel:+243891729772">+243 891 729 772</a></p>
+                    
+                </div>
+                <div class="footer-section">
+                    <h3>À propos du site de visite</h3>
+                    <p>Nous proposons les meilleurs visite au monde avec toute votre famille à des prix compétitifs</p>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+        <Ul>
+            <li class="RETOUR">
+                <a href="index.html">RETOUR</a>
+            </li>
+        </Ul>
+    </footer>
+  </section>
+</body>
+</html>
